@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: bucketlist_ror_development
+  database: bucketlist_ror_dev
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: bucketlist_ror_production
+  database: bucketlist_ror_prod
   username: bucketlist_ror
   password: <%= ENV['BUCKETLIST_ROR_DATABASE_PASSWORD'] %>
